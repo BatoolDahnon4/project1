@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/imageLogo"
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/whatsapp_image_2021_11_06_at_8_31_58_pm__1_" />
+
+    <TextView
+
+        style="@style/calculatetxt"
+        android:text="Calculate Your BMI" />
+
+    <TextView
+        android:id="@+id/hightTextView"
+        android:text="Enter your Hight (In m)"
+        style="@style/entertxt" />
+
+    <EditText
+        android:id="@+id/edtheight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/cardo_italic"
+        android:text="Enter your weight (In kg)"
+        android:textColor="#886388"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="179dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:background="#1E1E1C"
+        android:backgroundTint="#dc8383"
+        android:fontFamily="@font/cardo_italic"
+        android:gravity="center"
+        android:onClick="show_bmi"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/yourResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/cardo_italic"
+        android:text="Your Result:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cardo_italic"
+        android:hint="Result"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/toActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#dc8383"
+        android:text="Some Advice"
+        android:onClick="toActivity"
+        android:visibility="invisible" />
+
+</LinearLayout>

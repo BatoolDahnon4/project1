@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".overWeight">
+
+    <TextView
+        style="@style/entertxt"
+        android:text="Over Weight" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/imageLogo"
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/whatsapp_image_2021_11_06_at_8_31_58_pm__1_" />
+
+    <TextView
+        android:id="@+id/oldtxt"
+        style="@style/entertxt"
+        android:text="Are you a?" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#0B0A0A"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/avoidtxt"
+        style="@style/entertxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have to avoid:" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="135dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/havetxt"
+        style="@style/entertxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Have to :" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="135dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Good Advice"
+        android:textColor="#886388" />
+    <Button
+        android:id="@+id/back"
+        style="@style/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="back"/>
+
+
+</LinearLayout>

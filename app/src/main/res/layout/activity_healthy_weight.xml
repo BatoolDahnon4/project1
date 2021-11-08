@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".overWeight">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/imageLogo"
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/whatsapp_image_2021_11_06_at_8_31_58_pm__1_" />
+
+    <TextView
+        android:id="@+id/oldtxt"
+        style="@style/entertxt"
+        android:text="Great ! Keep going " />
+
+    <Button
+        android:id="@+id/back"
+        style="@style/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="back"/>
+
+</LinearLayout>
