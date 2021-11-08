@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context=".overWeight">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
     <TextView
         style="@style/entertxt"
         android:text="Under Weight" />
@@ -76,13 +83,6 @@
         android:text="Good Advice"
         android:textColor="#886388" />
 
-    <Button
-        android:id="@+id/button"
-        style="@style/backBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        android:onClick="back"/>
-
-
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
