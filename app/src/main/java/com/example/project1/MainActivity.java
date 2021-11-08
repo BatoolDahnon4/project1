@@ -33,18 +33,18 @@ public class MainActivity extends AppCompatActivity {
         if (results<18.5){
             edtresult.setText(String.valueOf("you are Underweight"));
             toActivity.setVisibility(View.VISIBLE);
-            calculate.setVisibility(View.INVISIBLE);
+         //   calculate.setVisibility(View.INVISIBLE);
         }
         if (results>= 18.5 && results < 25){
             edtresult.setText(String.valueOf("you have a healthy body"));
             toActivity.setVisibility(View.VISIBLE);
-            calculate.setVisibility(View.INVISIBLE);
+         //   calculate.setVisibility(View.INVISIBLE);
 
         }
         if (results>25){
             edtresult.setText(String.valueOf("you are overweight"));
             toActivity.setVisibility(View.VISIBLE);
-            calculate.setVisibility(View.INVISIBLE);
+           // calculate.setVisibility(View.INVISIBLE);
 
         }
     }
